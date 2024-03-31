@@ -6,7 +6,7 @@ class BasePage(Browser):
 
      INPUT_SEARCH = (By.ID, "search")
      def is_url_correct(self, text):
-         self.driver.current_url ==text
+         self.driver.current_url == text
 
      def find(self, locator):
         return self.driver.find_element(*locator)

@@ -9,7 +9,7 @@ import random
 
 
 class RegisterPage(BasePage):
-    REGISTER_URL = ("https://magento.softwaretestingboard.com/customer/account/create/")
+    REGISTER_URL = "https://magento.softwaretestingboard.com/customer/account/create/"
     INPUT_FIRST_NAME = (By.ID, "firstname")
     INPUT_LAST_NAME = (By.ID, "lastname")
     INPUT_EMAIL = (By.ID, "email_address")
