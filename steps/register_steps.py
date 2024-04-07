@@ -8,25 +8,25 @@ def step_impl(context):
 def step_impl(context):
     context.register_page.verify_url_register()
 
-@When('I enter "Leo" in the first name input')
-def step_impl(context):
-    context.register_page.set_first_name("Leo")
+@When('I enter "{text}" in the first name input')
+def step_impl(context, text):
+    context.register_page.set_first_name(text)
 
-@When('I enter "Messi" in the last name input')
-def step_impl(context):
-    context.register_page.set_last_name("Messi")
+@When('I enter "{text}" in the last name input')
+def step_impl(context, text):
+    context.register_page.set_last_name(text)
 
 @When('I enter a random email address in the email input')
 def step_impl(context):
     context.register_page.set_unique_email()
 
-@When('I enter "Leomessithegoat0" in the password input')
-def step_impl(context):
-    context.register_page.set_password("Leomessithegoat0")
+@When('I enter "{text}" in the password input')
+def step_impl(context, text):
+    context.register_page.set_password(text)
 
-@When('I enter "Leomessithegoat0" in the password confirm input')
-def step_impl(context):
-    context.register_page.set_password_confirm("Leomessithegoat0")
+@When('I enter "{text}" in the password confirm input')
+def step_impl(context, text):
+    context.register_page.set_password_confirm(text)
 
 @When('I click the register button')
 def step_impl(context):

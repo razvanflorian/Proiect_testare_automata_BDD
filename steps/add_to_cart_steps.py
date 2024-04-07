@@ -11,9 +11,9 @@ def step_impl(context):
     context.search_page.verify_url()
 
 
-@When('I enter "Bags for laptop " in the search field')
-def step_impl(context):
-    context.add_to_cart_page.set_input_search_field("Bags for laptop")
+@When('I enter "{text}" in the search field')
+def step_impl(context, text):
+    context.add_to_cart_page.set_input_search_field(text)
 
 @When("I click on the search button")
 def step_impl(context):
